@@ -12,4 +12,4 @@ RUN apk update && apk add android-tools@testing && apk add eudev@edge && apk add
 
 ENTRYPOINT [ "/usr/bin/adb" ]
 
-CMD [ "start-service" ]
+CMD [ "devices" ]
