@@ -15,7 +15,10 @@ RUN apk update && \
     apk add eudev@edge && \ 
     apk add usbutils@edge && \ 
     apk add curl && \ 
+    apk add file && \
     apk add perl@edge && \
+    apk add jq@edge && \
+    apk add imagemagick && \
     adb devices 
 
 ENTRYPOINT [ "/usr/bin/adb" ]
