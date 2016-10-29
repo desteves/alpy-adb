@@ -14,12 +14,12 @@ RUN apk update && \
     apk add android-tools@testing && \ 
     apk add eudev@edge && \ 
     apk add usbutils@edge && \ 
-    apk add curl && \ 
-    apk add file && \
-    apk add perl@edge && \
-    apk add jq@edge && \
-    apk add imagemagick && \
-    adb devices 
+    apk add perl@edge 
+    
+RUN apk add jq@edge
+RUN apk add curl 
+RUN apk add file
+RUN apk add imagemagick
 
 ENTRYPOINT [ "/usr/bin/adb" ]
 
